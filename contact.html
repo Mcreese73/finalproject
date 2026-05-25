@@ -53,12 +53,16 @@
 
         <br>
 
-    <form id="fcf-form-id" class="fcf-form-class w3-container w3-padding" method="post" action="https://formsubmit.co/Melissazakia2004@email.com">
+    <form id="fcf-form-id" class="fcf-form-class w3-container w3-padding" action="https://api.web3forms.com/submit" method="post">
         
+        <!--hidden stuff-->
+         <input type="hidden" name="access_key" value="bcea094f-4ee4-48c9-9f6c-9b18305d790d">
+
+         <!--user form inputs-->
         <div class="fcf-form-group">
-            <label for="Name" class="fcf-label w3-container"><h4>First Name</h4></label>
+            <label for="name" class="fcf-label w3-container"><h4>First Name</h4></label>
             <div class="fcf-input-group w3-container">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                <input type="text" id="Name" name="name" class="fcf-form-control" required>
             </div>
         </div>
 
@@ -66,7 +70,7 @@
         <div class="fcf-form-group">
             <label for="Email" class="fcf-label w3-container"><h4>Email Address</h4></label>
             <div class="fcf-input-group w3-container">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                <input type="email" id="Email" name="email" class="fcf-form-control" required>
             </div>
         </div>
 
@@ -74,7 +78,7 @@
         <div class="fcf-form-group">
             <label for="Message" class="fcf-label w3-container"><h4>Message</h4></label>
             <div class="fcf-input-group w3-container">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                <textarea id="Message" name="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
             </div>
         </div>
 

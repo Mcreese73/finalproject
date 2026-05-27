@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Melissa Creese - A Taste Of Inspiration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link href="css/my-styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Molengo&display=swap">
+    </head>
+
+<body>
+        <div id="home" class="w3-container">
+            
+                
+            
+                <header>  <!--w3-container adds 16 pixels of padding 
+                            around each element; w3-green makes the background green -->
+                    
+                
+                            <div class="container"> 
+                            <nav class="navbar">
+                            <h1 class="nav-branding w3-padding w3-left"><b>Melissa Creese - A Taste Of Inspiration</b></h1>
+                            <ul class="nav-menu w3-padding">
+                                <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                <a href="resume.html" class="nav-link">Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                                </li>                       
+                            </ul>
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                    </nav>
+                    </div>
+                    </header>
+
+    
+
+            <br>
+
+            <section>
+                <div class="yellow-background w3-center">
+                <h1>Gallery</h1>
+            </div>
+
+                            <!-- Images used to open the lightbox -->
+            <div class="w3-row w3-container">
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Icon-Letterform-thumbnail.jpg" width="100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Poster-thumbnail.jpg" width="100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Graphic Design Principles II-Letterform-thumbnail.jpg" width="100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+
+
+
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Creese_Melissa-Motion-Animation-thumbnail.jpg" width="100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Figureground -Reversal -thumbnail.jpg" width="100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Graphic Design Principles I-Texture Value-thumbnail.jpg" width="100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                </div>
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Music-Website-thumbnail.jpg" width="100%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+                <div class="w3-col s12 m6 l4">
+                    <img src="assets/Pattern-thumbnail.jpg" width="100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                </div>
+            </div>
+
+                        <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="assets/Icon-Letterform-300dpi.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="assets/Poster-300dpi.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="assets/Graphic Design Principles II-Letterform-300dpi.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">4/ 8</div>
+                    <img src="assets/Animation.gif" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="assets/Figureground -Reversal -300dpi.jpg" style="width:100%">
+                    </div>
+
+
+                    <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="assets/Graphic Design Principles I-Texture Value-300dpi.jpg" style="width:100%">
+                    </div>
+
+
+                    <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="assets/Music-Website-300dpi.jpg" style="width:100%">
+                    </div>
+
+
+
+                    <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="assets/Pattern-300dpi.jpg" style="width:100%">
+                    </div>
+
+
+
+
+                        <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+.
+    <!-- Thumbnail image controls -->
+     <div class="w3-row">
+        <article class="w3-col s12">
+      <img class="demo" src="assets/Icon-Letterform-thumbnail.jpg" width="72px" onclick="currentSlide(1)" alt="<b>Icon-Letterform</b><br> For this project, I had to pick a letter and whatever letter I choose, I have to think of anything that starts with that letter. I picked the letter “B”and I used a lowercase “b.” The object is a bowl.">
+      <img class="demo" src="assets/Poster-thumbnail.jpg" width="72px" onclick="currentSlide(2)" alt="<b>Poster</b><br>For this project, I had to use the same quote from the alignment project and make a poster with that quote, but no more black and white since I’ve been using those colors the last couple of projects.</p>">
+     <img class="demo" src="assets/Graphic Design Principles II-Letterform-thumbnail.jpg" width="72px" onclick="currentSlide(3)" alt="<b>Letterform</b><br>For this project, I had to pick a letter and make it figure to ground. I picked the letter “G” and tilted the “G”. Then, I zoomed it in to see the letter and shape. The shape in both pictures should look like a music note and the “G” should be shown.</p>">
+      <img class="demo" src="assets/Creese_Melissa-Motion-Animation-thumbnail.jpg" width="72px" onclick="currentSlide(4)" alt="<b>Animation</b><br>For this project, I have to use whatever quote I liked from the Graphic Designer I chose and researched and put it in motion. I chose Tibor Kalman and researched his quotes. One of his quotes that I really like was “I’m not as good a writer as I’d like to be; therefore, I like to use images to tell stories.</p>">
+      <img class="demo" src="assets/Figureground -Reversal -thumbnail.jpg" width="72px" onclick="currentSlide(5)" alt="<b>Figureground Reversal</b><br>The third picture has a mix of orange and green lines going in the opposite direction. They’re laying on the red triangles, and they’re laying on the yellow vertical lines.</div>">
+      <img class="demo" src="assets/Graphic Design Principles I-Texture Value-thumbnail.jpg" width="72px" onclick="currentSlide(6)" alt="<b>Texture</b><br>For this project, I had to pick a poem given by my professor and make a cover that fits with that poem. The poem I chose was called “I Have Folded My Sorrows” by Bob Kaufman. In his poem, he mentioned “gray unicorn” and “gray skies.”</p>">
+      <img class="demo" src="assets/Music-Website-thumbnail.jpg" width="72px" onclick="currentSlide(7)" alt="<b>Music Website</b><br>For this project, I had to make a website that could be a song lyric, a poem or an article.</p>">
+      <img class="demo" src="assets/Pattern-thumbnail.jpg" width="72px" onclick="currentSlide(8)" alt="<p><b>Pattern Project</b><br>For this project, I just did a tunnel with two chickens going in one direction and two other chickens going in another direction. There are layers of dirt and the circles which are holes in the dirt.</p>">
+      </article>
+  </div>
+</div>
+</div>
+                    
+
+
+
+
+  <br>
+
+        <div class="gallery-wrapper">
+
+            <div class="boxes-container">
+
+           <div class="small-box">
+            <a href="about.html" class="w3-hover"><h1>About</h1></a>
+        </div> 
+           <div class="small-box">
+            <a href="resume.html"><h1>Resume</h1></a>
+        </div> 
+           <div class="small-box">
+            
+        <a href="contact.html"><h1>Contact</h1></a>
+        
+    </div>     
+
+            </div>
+
+        </div>
+
+        <br>
+            
+            <footer class="w3-container">
+                <h5>&copy; Copyright 2026</h5>
+         
+
+           
+            </footer>
+            <script src="js/imagegallery.js"></script>
+     <script src="js/menuicon.js"></script>
+        
+	</body>
+</html>
